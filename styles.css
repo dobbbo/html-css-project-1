@@ -2,17 +2,17 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, Ubuntu, sans-serif;
-    padding: 0;
     margin: 0;
 }
 
 .header {
     display: flex;
-    padding: 16px 200px;
+    flex: 1;
+    padding: 16px 100px;
     justify-content: space-between;
-    background-color: #1f2937;
+    background-color: #125B50;
     align-items: center;
-    color: #f9faf8;
+    color: #FAF5E4;
 }
 
 .header-logo {
@@ -20,136 +20,146 @@ body {
     font-weight: bold;
 }
 
-.header-links {
+.header ul {
     display: flex;
+    flex-shrink: 0;
     gap: 50px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FAF5E4;
 }
 
 .hero {
     display: flex;
-    background-color: #1f2937;
-    padding: 50px 200px;
+    background-color: #125B50;
+    padding: 50px 100px;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    height: 350px;
+    flex: 1;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     width: 500px;
-    gap: 20px;
+    gap: 30px;
+    flex-shrink: 0;
 }
 
 .hero-main-text {
     font-size: 48px;
     font-weight: 900;
-    color: #f9faf8;
+    color: #FAF5E4;
 }
 
 .hero-secondary-text {
     font-size: 18px;
-    color: #e5e7eb;
+    color: #FAF5E4;
 }
 
 .hero button {
     padding: 10px 40px;
-    background-color: #3882F6;
-    color: white;
-    border-color: #3882F6;
+    background-color: #F8B400;
+    color: #125B50;
+    border-color: #F8B400;
     font-weight: bold;
     border-radius: 10px;
     border-style: solid;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .hero-image img {
+    width: 100%;
+    min-width: 300px;
     height: auto;
-    width: 800px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .check-this-out {
     display: flex;
-    background-color: white;
-    height: 450px;
     flex-direction: column;
-    padding: 50px 200px;
+    background-color: #FAF5E4;
+    padding: 50px 100px;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+    flex: 1;
 }
 
 .cto-header {
     font-size: 36px;
     font-weight: 900;
-    color: #1f2937
+    color: #125B50;
 }
 
-.cto-blocks {
+.check-this-out ul {
     display: flex;
-    gap: 100px;
+    align-items: flex-start;
+    gap: 50px;
+    list-style-type: none;
+    text-align: center;
 }
 
-.cto-blocks div {
+.check-this-out ul li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    color: #1f2937;
+    gap: 15px;
 }
 
-.cto-blocks img {
+.check-this-out img {
     height: auto;
-    width: 175px;
+    width: 100%;
     border-radius: 10px;
-    border: #3882F6;
-    border-width: 10px;
+    min-width: 100px;
+
+}
+
+.check-this-out a {
+    font-size: 16px;
+    color: #125B50;
 }
 
 .quote-section {
     display: flex;
     flex-direction: column;
-    background-color: #e5e7eb;
-    gap: 20px;
-    padding: 50px 200px;
-    height: 450px;
+    background-color: #125B50;
+    gap: 15px;
+    padding: 50px 100px;
     justify-content: center;
+    flex: 1;
+    color: #FAF5E4;
 }
 
 .quote {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    color: #1f2937;
 }
 
 .bill-bryson {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
-    color: #1f2937;
     text-align: end;
 }
 
 .call-to-action {
     display: flex;
-    height: 200px;
-    padding: 50px 200px;
+    padding: 50px 100px;
+    flex: 1;
+    background-color: #FAF5E4;
 }
 
 .cta-container {
     display: flex;
-    background-color: #3882F6;
-    padding: 30px 150px;
-    border-radius: 10px;
     flex: 1;
+    background-color: #125B50;
+    padding: 30px 100px;
+    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 
 .cta-text {
@@ -160,32 +170,32 @@ a {
 
 .cta-text-header {
     font-size: 24px;
-    color: #f9faf8;
+    color: #FAF5E4;
     font-weight: bold;
 }
 
 .cta-text-subtext {
     font-size: 18px;
     font-weight: lighter;
-    color: #f9faf8;
+    color: #FAF5E4;
 }
 
 .cta-container button {
     padding: 10px 40px;
-    border-color: #f9faf8;
+    border-color: #F8B400;
     border-radius: 10px;
     font-weight: bold;
-    color: #f9faf8;
-    background-color: #3882F6;
+    color: #125B50;
+    background-color: #F8B400;
     border-style: solid;
 }
 
 .footer {
     display: flex;
-    background-color: #1f2937;
+    background-color: #125B50;
     justify-content: center;
     align-items: center;
     padding: 32px 200px;
-    color: #f9faf8;
+    color: #FAF5E4;
     font-weight: lighter;
 }
