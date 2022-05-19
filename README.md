@@ -1,1 +1,1 @@
-# html-css-project-1
+The goal of this project is to create my very first webpage using HTML and CSS!
